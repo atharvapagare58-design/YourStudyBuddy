@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f6f7fb;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-section, #result {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+select, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 20px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.compare {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paywall {
+  margin-top: 20px;
+  padding: 15px;
+  background: #eef2ff;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Study Abroad Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+  <h1>Decide Your Best Study Abroad Option</h1>
+  <p>In 10 minutes, know what you need to do to study in Germany or the USA.</p>
+</section>
+
+<section class="form-section">
+  <h2>Tell us about yourself</h2>
+
+  <label>Level of study</label>
+  <select id="level">
+    <option>Bachelor’s</option>
+    <option>Master’s</option>
+  </select>
+
+  <label>Current education</label>
+  <select id="education">
+    <option>School student</option>
+    <option>Bachelor’s ongoing</option>
+    <option>Bachelor’s completed</option>
+  </select>
+
+  <label>Stream</label>
+  <select id="stream">
+    <option>Science</option>
+    <option>Commerce</option>
+    <option>Arts</option>
+    <option>Engineering / CS</option>
+  </select>
+
+  <label>Yearly budget</label>
+  <select id="budget">
+    <option>Under ₹10 lakh</option>
+    <option>₹10–20 lakh</option>
+    <option>₹20–35 lakh</option>
+    <option>₹35+ lakh</option>
+  </select>
+
+  <label>German language level</label>
+  <select id="german">
+    <option>None</option>
+    <option>A1</option>
+    <option>A2 or higher</option>
+  </select>
+
+  <label>Open to learning a new language?</label>
+  <select id="language">
+    <option>Yes</option>
+    <option>Maybe</option>
+    <option>No</option>
+  </select>
+
+  <button onclick="generateResult()">Get My Plan</button>
+</section>
+
+<section id="result" class="hidden">
+  <h2>Your Study Abroad Verdict</h2>
+
+  <p id="verdict"></p>
+
+  <div class="compare">
+    <div>
+      <h3>🇩🇪 Germany</h3>
+      <ul>
+        <li>Low / Free tuition</li>
+        <li>Rule-based admissions</li>
+        <li>Strong post-study work</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>🇺🇸 USA</h3>
+      <ul>
+        <li>High tuition</li>
+        <li>Holistic admissions</li>
+        <li>Competitive scholarships</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>What you need to do next (Germany)</h3>
+  <ul>
+    <li>APS Certificate</li>
+    <li>German language (A2/B1)</li>
+    <li>IELTS (if English-taught)</li>
+  </ul>
+
+  <div class="paywall">
+    <h3>🔒 Unlock Full Germany Plan</h3>
+    <p>Exact top 5 universities, full timeline, SOP guidance</p>
+    <strong>₹999 (one-time)</strong>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
